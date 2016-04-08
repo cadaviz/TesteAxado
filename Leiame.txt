@@ -14,6 +14,7 @@
 	- A camada de visualização foi construida com MVC5;
 	- Para modelagem das views foi utilizado o Razor;
 	- Foram utilizadas rotas para deixar as urls mais amigáveis;
+	- O site foi construído de forma responsiva utilizando o bootstrap;
 	- Toda a aplicação foi desenvolvida no Visual Studio 2015 Enterprise.
 	
 	
