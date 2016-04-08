@@ -1,0 +1,12 @@
+0 - Presentation
+1 - Services
+2 - Application
+3 - Domain
+
+4 - Infra
+	4.1 - Data
+		Camadas de dados. 
+		Realiza a conexão com estruturas de persistencia de dados.
+		Define como são as estruturas nas quais os objetos serão armazenados.
+
+	4.2 - Cross Cutting

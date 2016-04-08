@@ -1,0 +1,32 @@
+﻿@{
+    string userName = (@ViewBag.SessionInstance.IsAuthenticated ? @ViewBag.SessionInstance.AuthenticatedUser.UserName : string.Empty);
+}
+
+@if (@ViewBag.SessionInstance.IsAuthenticated)
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            @Html.ActionLink("Olá " + userName + "!", "Details", "User", new { id = @ViewBag.SessionInstance.AuthenticatedUser.Id }, null)
+        </li>
+        <li>
+            <a href="@Url.Action("Logout", "User")">
+                <span class="glyphicon glyphicon-log-out"></span> Sair
+            </a>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a href="@Url.Action("Create", "User")">
+                <span class="glyphicon glyphicon-user"></span> Criar Conta
+            </a>
+        </li>
+        <li>
+            <a href="@Url.Action("Login", "User")">
+                <span class="glyphicon glyphicon-log-in"></span> Login
+            </a>
+        </li>
+    </ul>
+}

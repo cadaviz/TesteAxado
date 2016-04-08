@@ -1,0 +1,53 @@
+﻿@model IEnumerable<TesteAxado.Web.ViewModels.RatingViewModel>
+@section scripts{
+    @Scripts.Render("~/bundles/StarRating")
+
+    <script>
+        function rateCarrier(carrierId, rateValue) {
+            debugger;
+
+            var data = {
+                CarrierId: carrierId,
+                RateValue: rateValue,
+            }; 
+          
+            $.ajax({
+                url: "@Url.Action("RateCarrier", "Rating")",
+                data: data,
+            async: false,
+            type: "POST",
+            dataType: "json",
+        });
+        }
+    </script>
+}
+
+@section styles{
+    @Styles.Render("~/Content/StarRating")
+    @Styles.Render("~/Content/rating")
+}
+
+<h2>Avaliações</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Carrier.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rate)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="nameCell">
+                @Html.ActionLink(item.Carrier.Name, "Details", "Carrier", new { id = item.CarrierId }, null)
+            </td>
+            <td>
+                <input id="odara" class="rating rating-loading" data-show-clear="false" data-min="0" data-max="5" data-step="1" data-size="xs" onchange="rateCarrier(@item.CarrierId, this.value)" value="@item.Rate" />
+            </td>
+        </tr>
+    }
+</table>

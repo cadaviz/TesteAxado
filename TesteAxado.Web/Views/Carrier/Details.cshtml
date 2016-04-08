@@ -1,0 +1,26 @@
+﻿@model TesteAxado.Web.ViewModels.CarrierViewModel
+
+<h2>Detalhes</h2>
+<hr />
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+<div class="form-actions no-color">
+    @if (Request.UrlReferrer != null)
+    {
+        <input type="button" class="btn btn-default" value="Voltar" onclick="history.go(-1);" />
+    }
+
+    @Html.ActionLink("Alterar", "Edit", new { id = Model.Id }, new { @class = "btn btn-default" })
+
+</div>

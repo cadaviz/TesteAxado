@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{31B7597F-BCA4-4297-B059-DA07F3093DCA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{65099EF7-F4C2-4E97-8526-4E5C03839913}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{53E0D921-44BD-453D-BDA9-4EC222DE2E96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{CAD3253B-53C8-4845-8218-5A415FA8AA84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{E3A78930-CB72-4794-99E4-F56E7A83F850}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{EDEDDC01-626D-4294-9C63-2624DD407924}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{5FBAED01-24E9-45F6-81A7-3931810E2FDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{12D5AA41-ABC9-4EBE-8348-134CF32B2526}"
+	ProjectSection(SolutionItems) = preProject
+		Leiame.txt = Leiame.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAxado.Web", "TesteAxado.Web\TesteAxado.Web.csproj", "{4C43DA58-767C-4A91-9023-D730BDD8BD75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAxado.Application", "TesteAxado.Application\TesteAxado.Application.csproj", "{FC13827B-A986-49F0-AC01-9B853AE3917E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAxado.Domain", "TesteAxado.Domain\TesteAxado.Domain.csproj", "{0B746CF1-090A-425C-AF59-D4037CB5C94F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteAxado.Infra.Data", "TesteAxado.Infra.Data\TesteAxado.Infra.Data.csproj", "{6193C127-8C95-4A04-A8D3-70A4447D18FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C43DA58-767C-4A91-9023-D730BDD8BD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C43DA58-767C-4A91-9023-D730BDD8BD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C43DA58-767C-4A91-9023-D730BDD8BD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C43DA58-767C-4A91-9023-D730BDD8BD75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC13827B-A986-49F0-AC01-9B853AE3917E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC13827B-A986-49F0-AC01-9B853AE3917E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC13827B-A986-49F0-AC01-9B853AE3917E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC13827B-A986-49F0-AC01-9B853AE3917E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B746CF1-090A-425C-AF59-D4037CB5C94F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B746CF1-090A-425C-AF59-D4037CB5C94F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B746CF1-090A-425C-AF59-D4037CB5C94F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B746CF1-090A-425C-AF59-D4037CB5C94F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6193C127-8C95-4A04-A8D3-70A4447D18FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6193C127-8C95-4A04-A8D3-70A4447D18FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6193C127-8C95-4A04-A8D3-70A4447D18FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6193C127-8C95-4A04-A8D3-70A4447D18FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EDEDDC01-626D-4294-9C63-2624DD407924} = {E3A78930-CB72-4794-99E4-F56E7A83F850}
+		{5FBAED01-24E9-45F6-81A7-3931810E2FDC} = {E3A78930-CB72-4794-99E4-F56E7A83F850}
+		{4C43DA58-767C-4A91-9023-D730BDD8BD75} = {31B7597F-BCA4-4297-B059-DA07F3093DCA}
+		{FC13827B-A986-49F0-AC01-9B853AE3917E} = {53E0D921-44BD-453D-BDA9-4EC222DE2E96}
+		{0B746CF1-090A-425C-AF59-D4037CB5C94F} = {CAD3253B-53C8-4845-8218-5A415FA8AA84}
+		{6193C127-8C95-4A04-A8D3-70A4447D18FB} = {EDEDDC01-626D-4294-9C63-2624DD407924}
+	EndGlobalSection
+EndGlobal
