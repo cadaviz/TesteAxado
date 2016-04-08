@@ -1,12 +1,20 @@
-0 - Presentation
-1 - Services
-2 - Application
-3 - Domain
+== Montando ambiente de execução ==
+1 - Deve-se criar uma base de dados e atualizar a connection string no arquivo web.config;
+2 - Rodar os comandos contidos no arquivo script.sql para criação das tabelas;
+3 - Executar o programa.
 
-4 - Infra
-	4.1 - Data
-		Camadas de dados. 
-		Realiza a conexão com estruturas de persistencia de dados.
-		Define como são as estruturas nas quais os objetos serão armazenados.
+== Códigos fontes == 
+	O projeto foi commitado no GitHub no link: https://github.com/cadaviz/TesteAxado
+	
+== Tecnologias envolvidas ==
+	- Foi utilizada a estrutura DDD para elaboração do projeto;
+	- A injeção de dependências foi realizada utilizando o Ninject;
+	- O banco foi construído utilizando o Migrations no modelo code-first e foi utilizada a versão 6 do Entity Framework;
+	- Para a tradução de objetos de domínio para viewModel foi utilizado o AutoMapper;
+	- A camada de visualização foi construida com MVC5;
+	- Para modelagem das views foi utilizado o Razor;
+	- Foram utilizadas rotas para deixar as urls mais amigáveis;
+	- Toda a aplicação foi desenvolvida no Visual Studio 2015 Enterprise.
+	
+	
 
-	4.2 - Cross Cutting
